@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log seven_segment_led.vds -m64 -mode batch -messageDb vivado.pb -notrace -source seven_segment_led.tcl
+
