@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\Coding\FPGA_REAL\FPGA\Scrolling_LEDs\Scrolling_LEDs.runs\impl_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

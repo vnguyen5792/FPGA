@@ -1,0 +1,27 @@
+webtalk_init -webtalk_dir C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/
+webtalk_register_client -client project
+webtalk_add_data -client project -key date_generated -value "Sun Sep 21 18:20:31 2025" -context "software_version_and_target_device"
+webtalk_add_data -client project -key product_version -value "Vivado v2015.2 (64-bit)" -context "software_version_and_target_device"
+webtalk_add_data -client project -key build_version -value "1266856" -context "software_version_and_target_device"
+webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
+webtalk_add_data -client project -key registration_id -value "" -context "software_version_and_target_device"
+webtalk_add_data -client project -key tool_flow -value "labtool" -context "software_version_and_target_device"
+webtalk_add_data -client project -key beta -value "FALSE" -context "software_version_and_target_device"
+webtalk_add_data -client project -key route_design -value "FALSE" -context "software_version_and_target_device"
+webtalk_add_data -client project -key target_family -value "not_applicable" -context "software_version_and_target_device"
+webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
+webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
+webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "ce30806369d955d39adb400703be1afb" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_id -value "8b57b4bc-7ebf-4b4f-9f11-c038a9db101b" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "3" -context "software_version_and_target_device"
+webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
+webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "12th Gen Intel(R) Core(TM) i5-12450H" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "2496 MHz" -context "user_environment"
+webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
+webtalk_add_data -client project -key system_ram -value "33.000 GB" -context "user_environment"
+webtalk_register_client -client labtool
+webtalk_add_data -client labtool -key pgmcnt -value "00:00:00" -context "labtool\\usage"
+webtalk_transmit -clientid 4267898360 -regid "" -xml C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/usage_statistics_ext_labtool.xml -html C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/usage_statistics_ext_labtool.html -wdm C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/usage_statistics_ext_labtool.wdm -intro "<H3>LABTOOL Usage Report</H3><BR>"
+webtalk_terminate

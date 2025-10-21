@@ -1,0 +1,12 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/labtool_webtalk.tcl -notrace
+
+    while executing
+"webtalk_transmit -clientid 840119757 -regid "213555599_0_0_049" -xml C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/usage_statistic..."
+    (file "C:/Coding/FPGA_REAL/FPGA/Scrolling_LEDs/Scrolling_LEDs.hw/webtalk/labtool_webtalk.tcl" line 28)
+INFO: [Common 17-206] Exiting Webtalk at Sun Sep 21 16:16:09 2025...
