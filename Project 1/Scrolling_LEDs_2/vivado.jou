@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Oct 21 12:05:12 2025
+# Process ID         : 10920
+# Current directory  : C:/Coding/FPGA_REAL/FPGA/Project 1/Scrolling_LEDs_2
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24316 C:\Coding\FPGA_REAL\FPGA\Project 1\Scrolling_LEDs_2\project_1.xpr
+# Log file           : C:/Coding/FPGA_REAL/FPGA/Project 1/Scrolling_LEDs_2/vivado.log
+# Journal file       : C:/Coding/FPGA_REAL/FPGA/Project 1/Scrolling_LEDs_2\vivado.jou
+# Running On         : Jacobs-Laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 33982 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 40425 MB
+# Available Virtual  : 25567 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Coding/FPGA_REAL/FPGA/Project 1/Scrolling_LEDs_2/project_1.xpr}
+update_compile_order -fileset sources_1
