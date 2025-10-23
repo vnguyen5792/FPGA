@@ -3,6 +3,7 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+<<<<<<< HEAD
 # Start of session at: Tue Oct 21 12:09:57 2025
 # Process ID         : 29300
 # Current directory  : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.runs/synth_1
@@ -20,5 +21,24 @@
 # Swap memory        : 10209 MB
 # Total Virtual      : 27085 MB
 # Available Virtual  : 4011 MB
+=======
+# Start of session at: Tue Oct 21 12:10:56 2025
+# Process ID         : 17304
+# Current directory  : C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.runs/synth_1
+# Command line       : vivado.exe -log slow_clock.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source slow_clock.tcl
+# Log file           : C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.runs/synth_1/slow_clock.vds
+# Journal file       : C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.runs/synth_1\vivado.jou
+# Running On         : Jacobs-Laptop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450H
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 33982 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 40425 MB
+# Available Virtual  : 25549 MB
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
 #-----------------------------------------------------------
 source slow_clock.tcl -notrace

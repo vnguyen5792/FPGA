@@ -4,7 +4,11 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
+<<<<<<< HEAD
   variable script "C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.runs/synth_1/slow_clock.tcl"
+=======
+  variable script "C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.runs/synth_1/slow_clock.tcl"
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
   variable category "vivado_synth"
 }
 
@@ -63,6 +67,7 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
+<<<<<<< HEAD
 set_property webtalk.parent_dir {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.cache/wt} [current_project]
 set_property parent.project_path {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
@@ -72,6 +77,17 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.srcs/sources_1/new/slow_clock.v}}
+=======
+set_property webtalk.parent_dir {C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.cache/wt} [current_project]
+set_property parent.project_path {C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.xpr} [current_project]
+set_property default_lib xil_defaultlib [current_project]
+set_property target_language Verilog [current_project]
+set_property ip_output_repo {c:/Coding/FPGA_REAL/FPGA/Project 2/project_1.cache/ip} [current_project]
+set_property ip_cache_permissions {read write} [current_project]
+OPTRACE "Creating in-memory project" END { }
+OPTRACE "Adding files" START { }
+read_verilog -library xil_defaultlib {{C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.srcs/sources_1/new/slow_clock.v}}
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -81,10 +97,19 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+<<<<<<< HEAD
 read_xdc {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.srcs/constrs_1/new/leds.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.srcs/constrs_1/new/leds.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
+=======
+read_xdc {{C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.srcs/constrs_1/new/leds.xdc}}
+set_property used_in_implementation false [get_files {{C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.srcs/constrs_1/new/leds.xdc}}]
+
+set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental {C:/Coding/FPGA_REAL/FPGA/Project 2/project_1.srcs/utils_1/imports/synth_1/slow_clock.dcp}
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
