@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761066594">
+  <File Type="PA-TCL" Name="slow_clock.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="slow_clock_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="slow_clock_reports.tcl"/>
+  <File Type="RDS-RDS" Name="slow_clock.vds"/>
+=======
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1761066653" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/slow_clock.dcp">
   <File Type="PA-TCL" Name="slow_clock.tcl"/>
   <File Type="REPORTS-TCL" Name="slow_clock_reports.tcl"/>
   <File Type="RDS-RDS" Name="slow_clock.vds"/>
   <File Type="RDS-PROPCONSTRS" Name="slow_clock_drc_synth.rpt"/>
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
   <File Type="RDS-UTIL" Name="slow_clock_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="slow_clock_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="slow_clock.dcp"/>
@@ -54,6 +62,8 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
     <Filter Type="Utils"/>
+<<<<<<< HEAD
+=======
     <File Path="$PSRCDIR/utils_1/imports/synth_1/slow_clock.dcp">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -62,6 +72,7 @@
         <Attr Name="AutoDcp" Val="1"/>
       </FileInfo>
     </File>
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>

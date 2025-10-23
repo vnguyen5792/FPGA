@@ -1,8 +1,13 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
+<<<<<<< HEAD
+| Date         : Tue Oct 21 12:12:03 2025
+| Host         : glizzy running 64-bit major release  (build 9200)
+=======
 | Date         : Tue Oct 21 12:11:53 2025
 | Host         : Jacobs-Laptop running 64-bit major release  (build 9200)
+>>>>>>> da878ca9c576c7e64db86c35adc5b580c91c0a5c
 | Command      : report_utilization -file slow_clock_utilization_synth.rpt -pb slow_clock_utilization_synth.pb
 | Design       : slow_clock
 | Device       : xc7a35tcpg236-1
