@@ -134,3 +134,5 @@ INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.1/Vivado/data/ip'.
 open_project: Time (s): cpu = 00:00:39 ; elapsed = 00:00:20 . Memory (MB): peak = 1628.121 ; gain = 196.008
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 23 10:58:05 2025...
