@@ -1,1 +1,7 @@
-*.jou 
+# Ignore Vivado log and journal files
+*.log
+*.jou
+# You may want to ignore other build files like:
+*.str
+*.wdb
+*.dir
