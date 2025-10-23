@@ -20,9 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module slow_clock(clk_in);
-    input clk_in;
-    reg clk_out;
+module slow_clock(input clk_in, output reg clk_out);
     reg [25:0] counter;
     always@(posedge clk_in) 
     begin
