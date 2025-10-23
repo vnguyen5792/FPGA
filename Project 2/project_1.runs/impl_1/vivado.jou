@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Oct 21 12:14:30 2025
+# Process ID         : 25720
+# Current directory  : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.runs/impl_1
+# Command line       : vivado.exe -log slow_clock.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source slow_clock.tcl -notrace
+# Log file           : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.runs/impl_1/slow_clock.vdi
+# Journal file       : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project 2/project_1.runs/impl_1\vivado.jou
+# Running On         : glizzy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16876 MB
+# Swap memory        : 10209 MB
+# Total Virtual      : 27085 MB
+# Available Virtual  : 4331 MB
+#-----------------------------------------------------------
+source slow_clock.tcl -notrace

@@ -19,8 +19,24 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module seven_seg(
-
+    input [3:0] display,
+    output reg [6:0] seg
     );
+    
+     always@(display)
+       begin
+           case(display)
+           0:seg = 7'b1000010; 	//"d"
+	   	   1:seg = 7'b0000001;  //"O"
+           2:seg = 7'b1101010;  //"n"
+ 	       3:seg = 7'b0110000;  //"E"
+	       4:seg = 7'b1111001;	//"I"
+           5:seg = 7'b1110001;  //"L"
+           
+           default:seg =7'b1111111;
+           
+           endcase
+       end
 endmodule
+
