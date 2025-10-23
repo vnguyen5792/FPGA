@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Oct 23 11:52:59 2025
+# Process ID         : 16976
+# Current directory  : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent22424 C:\Users\vieta\OneDrive\Desktop\School Stuff\Fall 2025\FPGA\Proect 2 Retry\project_1\project_1.xpr
+# Log file           : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/vivado.log
+# Journal file       : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1\vivado.jou
+# Running On         : glizzy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16876 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 26540 MB
+# Available Virtual  : 13794 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/project_1.xpr}
+add_files -norecurse {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/project_1.srcs/sources_1/new/seven_seg.v} {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/project_1.srcs/sources_1/new/psadb.v} {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/project_1.srcs/sources_1/new/slow_clock.v}}
+update_compile_order -fileset sources_1
+add_files -fileset constrs_1 -norecurse {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Proect 2 Retry/project_1/project_1.srcs/constrs_1/new/leds.xdc}}
