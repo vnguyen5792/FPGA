@@ -20,15 +20,13 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module slow_clock(clk_in);
-    input clk_in;
-    reg clk_out;
+module slow_clock( input clk_in, output reg clk_out1);
     reg [25:0] counter;
     always@(posedge clk_in) 
     begin
-        if(counter == 499_999)
+        if(counter == 9999)
             begin
-                clk_out = ~clk_out; 
+                clk_out1 = ~clk_out1; 
                 counter = 0;
             end
         else 

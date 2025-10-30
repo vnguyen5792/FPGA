@@ -21,20 +21,20 @@
 
 module seven_seg(
     input [3:0] display,
-    output reg [6:0] seg
+    output reg [6:0] seg1
     );
     
      always@(display)
        begin
            case(display)
-           0:seg = 7'b1000010; 	//"d"
-	   	   1:seg = 7'b0000001;  //"O"
-           2:seg = 7'b1101010;  //"n"
- 	       3:seg = 7'b0110000;  //"E"
-	       4:seg = 7'b1111001;	//"I"
-           5:seg = 7'b1110001;  //"L"
+           0:seg1 = 7'b0100001;  //"d"
+	   	   1:seg1 = 7'b1000000;  //"O"
+           2:seg1 = 7'b0101011;  //"n"
+ 	       3:seg1 = 7'b0000110;  //"E"
+	       4:seg1 = 7'b1001111;	 //"I"
+           5:seg1 = 7'b1000111;  //"L"
            
-           default:seg =7'b1111111;
+           default:seg1 =7'b1111111;
            
            endcase
        end
