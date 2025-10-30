@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Oct 30 12:05:21 2025
+# Process ID         : 28412
+# Current directory  : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent28232 C:\Users\vieta\OneDrive\Desktop\School Stuff\Fall 2025\FPGA\Project2_8seg\project_2.xpr
+# Log file           : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/vivado.log
+# Journal file       : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg\vivado.jou
+# Running On         : glizzy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16876 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27614 MB
+# Available Virtual  : 12792 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.xpr}
+update_compile_order -fileset sources_1
+add_files -norecurse {{C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.srcs/sources_1/new/seven_seg.v} {C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.srcs/sources_1/new/slow_clock.v}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1

@@ -2,9 +2,9 @@ module 8_seven_seg(
     input clk_in,
     input [4:0] parking_slots,
     output [6:0] seg,
-    output reg [3:0] an,
+    output reg [7:0] an,
     output reg [4:0] parking_slots_avail);
-    reg [1:0]enable;
+    reg [2:0]enable;
     reg [3:0] display;
     seven_seg SEG_INST(.display(display), .seg1(seg));
 
@@ -59,43 +59,66 @@ module 8_seven_seg(
         if(parking_slots[0]&(parking_slots[1]&(parking_slots[2]&(parking_slots[3]&(parking_slots[4])))))
         begin
             case(enable)
-                2'b00: begin
+                //last four displays
+                3'b000: begin
                     display = 3;
-                    an= 4'b1110;
-                    end
-                2'b01: begin
+                    an = 8'b11111110;
+                3'b001: begin
                     display = 2;
-                    an= 4'b1101;
-                    end
-                2'b10: begin
+                    an = 8'b11111101;
+                3'b010: begin
                     display = 1;
-                    an= 4'b1011;
-                    end
-                2'b11: begin
+                    an = 8'b11111011;
+                3'b011: begin
                     display = 0;
-                    an= 4'b0111;
-                    end
+                    an = 8'b11110111;
+                    
+                //first four displays
+                3'b100: begin
+                    display = 3;
+                    an = 8'b11101111;
+                3'b101: begin
+                    display = 2;
+                    an = 8'b11011111;
+                3'b110: begin
+                    display = 1;
+                    an = 8'b10111111;
+                3'b111: begin
+                    display = 0;
+                    an = 8'b01111111;
             endcase
         end
         else
         begin
             case(enable)
-                2'b00: begin
+            
+            //last four displays
+                3'b000: begin
                     display = 3;
-                    an= 4'b1110;
-                end
-                2'b01: begin
+                    an = 8'b11111110;
+                3'b001: begin
                     display = 5;
-                    an= 4'b1101;
-                end
-                2'b10: begin
+                    an = 8'b11111101;
+                3'b010: begin
                     display = 0;
-                    an= 4'b1011;
-                end
-                2'b11: begin
+                    an = 8'b11111011;
+                3'b011: begin
                     display = 4;
-                    an= 4'b0111;
-                end
+                    an = 8'b11110111;
+                    
+                //first four displays
+                3'b100: begin
+                    display = 3;
+                    an = 8'b11101111;
+                3'b101: begin
+                    display = 5;
+                    an = 8'b11011111;
+                3'b110: begin
+                    display = 0;
+                    an = 8'b10111111;
+                3'b111: begin
+                    display = 4;
+                    an = 8'b01111111;
             endcase
           end
        end

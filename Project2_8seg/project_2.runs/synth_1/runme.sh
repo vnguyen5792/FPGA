@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Coding/FPGA_REAL/FPGA/Project2_8seg/project_2.runs/synth_1'
+HD_PWD='C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

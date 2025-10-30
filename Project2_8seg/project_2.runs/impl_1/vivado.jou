@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Thu Oct 30 12:36:09 2025
+# Process ID         : 22052
+# Current directory  : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.runs/impl_1
+# Command line       : vivado.exe -log seven_seg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source seven_seg.tcl -notrace
+# Log file           : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.runs/impl_1/seven_seg.vdi
+# Journal file       : C:/Users/vieta/OneDrive/Desktop/School Stuff/Fall 2025/FPGA/Project2_8seg/project_2.runs/impl_1\vivado.jou
+# Running On         : glizzy
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i7-12700H
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 16876 MB
+# Swap memory        : 10737 MB
+# Total Virtual      : 27614 MB
+# Available Virtual  : 7832 MB
+#-----------------------------------------------------------
+source seven_seg.tcl -notrace
