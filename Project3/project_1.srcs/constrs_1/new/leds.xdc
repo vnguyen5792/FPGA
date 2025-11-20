@@ -2,18 +2,6 @@
 set_property PACKAGE_PIN W5 [get_ports clk]							
 	set_property IOSTANDARD LVCMOS33 [get_ports clk]
 	create_clock -add -name sys_clk_pin -period 10.00 -waveform {0 5} [get_ports clk]
-	
-# Leds
-set_property PACKAGE_PIN U16 [get_ports {parking_slots_avail[0]}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {parking_slots_avail[0]}]
-set_property PACKAGE_PIN E19 [get_ports {parking_slots_avail[1]}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {parking_slots_avail[1]}]
-set_property PACKAGE_PIN U19 [get_ports {parking_slots_avail[2]}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {parking_slots_avail[2]}]
-set_property PACKAGE_PIN V19 [get_ports {parking_slots_avail[3]}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {parking_slots_avail[3]}]
-set_property PACKAGE_PIN W18 [get_ports {parking_slots_avail[4]}]
-    set_property IOSTANDARD LVCMOS33 [get_ports {parking_slots_avail[4]}]
 
 # Switches
 set_property PACKAGE_PIN V17 [get_ports {sw[0]}]					
@@ -58,3 +46,4 @@ set_property PACKAGE_PIN V4 [get_ports {an[2]}]
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[2]}]
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]					
 	set_property IOSTANDARD LVCMOS33 [get_ports {an[3]}]
+	

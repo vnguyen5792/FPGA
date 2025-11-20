@@ -7,11 +7,11 @@ wire [3:0] mux_out;
 wire [1:0] counter_out;
 wire [3:0] ones, tens, hundreds;
 
-//instantiate binary_to_BCD
+//instantiate code_converter
 code_converter(sw, ones, tens, hundreds); //Done
 
 //instatiate mux4to1
-mux4to1(zero, ones, tens, hundereds ,counter_out,mux_out);
+mux4to1(zero, ones, tens, hundreds ,counter_out, mux_out);
 
 //instantiate slowclock
 slowclock(clk, clk_out); // Done
