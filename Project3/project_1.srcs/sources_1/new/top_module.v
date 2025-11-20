@@ -1,5 +1,5 @@
 module top_module(input clk, input [7:0] sw,
-output [3:0] an,
+output [2:0] an,
 output [6:0] seg);
 parameter zero = 4'b0000;
 wire clk_out;

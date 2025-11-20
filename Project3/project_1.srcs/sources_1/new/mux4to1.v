@@ -5,7 +5,7 @@ input [3:0] D,
 input [1:0] sel, 
 output reg [3:0] Y);
 
-always@(sel)
+always@(*)
 begin
 //use case statement
     case(sel)
