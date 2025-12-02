@@ -3,6 +3,7 @@ module slow_counter(input clk,
 reg [1:0] temp = 0;
 always @(posedge clk) begin
 temp = temp + 1;
- end
+end
+
 assign Q = temp;
 endmodule

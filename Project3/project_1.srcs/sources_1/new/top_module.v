@@ -1,17 +1,18 @@
 module top_module(input clk, input [7:0] sw,
-output [2:0] an,
+output [3:0] an,
 output [6:0] seg);
 parameter zero = 4'b0000;
 wire clk_out;
 wire [3:0] mux_out;
 wire [1:0] counter_out;
-wire [3:0] ones, tens, hundreds;
+wire [3:0] ones, tens;
+wire [1:0] hundreds;
 
 //instantiate code_converter
 code_converter(sw, ones, tens, hundreds); //Done
 
 //instatiate mux4to1
-mux4to1(zero, ones, tens, hundreds ,counter_out, mux_out);
+mux4to1(ones, tens, hundreds, zero, counter_out, mux_out);
 
 //instantiate slowclock
 slowclock(clk, clk_out); // Done

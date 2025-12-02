@@ -2,7 +2,7 @@ module slowclock (input clk_in,output reg clk_out);
     reg [19:0]counter; // needs to hit 999999
     always@(posedge clk_in) 
     begin
-        if(counter == 500_000)
+        if(counter == 1_000_000)
         begin
             counter = 0;
             clk_out = ~clk_out;
