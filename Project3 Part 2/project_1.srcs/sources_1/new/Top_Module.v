@@ -16,22 +16,23 @@ module Top_Module(   //Top Module
 	wire [4:0] timer_count; //Game Timer runs for 20 seconds, input to BCD module
 
 	//instantiate binarytobcd
+	binarytobcd(score_count, timer_count,timer_count_ones, timer_count_tens, score_ones, score_tens);
 	
 	//instantiate mux4to1
-	
+	mux4to1(timer_count_ones, timer_count_tens, score_ones, score_tens, counter_out, mux_out);
 	//instantiate slowclock
-	
+	slowclock(clk, clk_out);
 	//instantiate slow_counter
-	
+	slow_counter(clk_out, counter_out);
 	//instantiate decoder2to4
-	
+	decoder2to4(counter_out, an);
 	//instantiate bcd7seg
-	
+	bcd7seg(mux_out, seg);
 	//instantiate timerClock
-    
+    timerClock(clk, timer_clk_out);
 	//instanttiate timerount
-	
+	timerCount(clk, reset, timer_count);
 	//instantiate Bust_a_Mole_Game
-	
+	Bust_a_Mole_game(clk, sw, reset, led, score_count);
 	
 endmodule
