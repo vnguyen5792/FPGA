@@ -1,6 +1,6 @@
 module binarytobcd(
-input [7:0] timerInput, 	//Timer Count 20>>19>>18>...0
-input [7:0] scoreInput,     //Score Count, max of 32
+input [4:0] timerInput, 	//Timer Count 20>>19>>18>...0
+input [5:0] scoreInput,     //Score Count, max of 32
 output [3:0] timerOnes, 	//We need 4 bits to display a digit for ones as it could go from 0 to 9. 
 output [3:0] timerTens, 	//We need 4 bits to display a digit for tens as it could go from 0 to 9.
 output [3:0] scoreOnes,
@@ -14,11 +14,15 @@ wire [3:0] d1,d2,d3,d4,d5,d6,d7;
 //Timer section
 //Follow the Block Diagram
 assign b1 = {1'b0,timerInput[7:5]};	 
-==================================		 
+//==================================		 
 assign b7 = {a6[2:0],a4[3]}; 		
 
 add3 (b1,a1);	 
-======================================
+add3 (b2,a2);
+add3 (b3,a3);
+add3 (b4,a4);
+add3 (b5,a5);
+add3 (b6,a6);
 add3 (b7,a7);
 
 
@@ -29,11 +33,15 @@ assign timerTens = 			//four bits that will make-up tens.
 //Score section
 //Follow the Block Diagram
 assign d1 = {1'b0,scoreInput[7:5]};	 
-========================================		  
+//========================================		  
 assign d7 = {c6[2:0],c4[3]}; 		
 
 add3 n1(d1,c1);	
-======================= 
+add3 n1(d2,c2);	
+add3 n1(d3,c3);	
+add3 n1(d4,c4);	
+add3 n1(d5,c5);	
+add3 n1(d6,c6);	
 add3 n7(d7,c7);
 
 
