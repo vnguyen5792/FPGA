@@ -8,8 +8,37 @@ output reg [5:0]score_count); //maximum mole count 32
 
 localparam 
 S000000 = 0, //constant declared for each state, for maximum score count of 32
-S000001 = 1, 
-------------
+S000001 = 1,
+S000010 = 2,
+S000011 = 3,
+S000100 = 4,
+S000101 = 5,
+S000110 = 6,
+S000111 = 7,
+S001000 = 8,
+S001001 = 9,
+S001010 = 10,
+S001011 = 11,
+S001100 = 12,
+S001101 = 13,
+S001110 = 14,
+S001111 = 15,
+S010000 = 16,
+S010001 = 17,
+S010010 = 18,
+S010011 = 19,
+S010100 = 20,
+S010101 = 21,
+S010110 = 22,
+S010111 = 23,
+S011000 = 24,
+S011001 = 25,
+S011010 = 26,
+S011011 = 27,
+S011100 = 28,
+S011101 = 29,
+S011110 = 30,
+S011111 = 31,
 S100000 = 32;
 
  reg [5:0] current_state = 0; // Current score count state declared as register
@@ -54,7 +83,7 @@ score_count <=1;
 end
 
 
-=========================
+//=========================
 32: begin
 next_state <= 32;
 score_count <= 32;
